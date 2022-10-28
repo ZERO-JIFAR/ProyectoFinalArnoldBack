@@ -1,0 +1,50 @@
+<!--<div class="row">
+    <h1>Educación</h1>
+    <div class=" col-lg-1"></div>
+    <div class=" col-lg-8">
+        <ul>
+            <li>
+                <h1>Estudio 1</h1> - <h3>años</h3>
+            </li>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, cupiditate quo nobis excepturi eligendi blanditiis asperiores architecto deserunt odit, veritatis harum! Excepturi dolores, dolore pariatur perspiciatis delectus officiis. Necessitatibus, saepe?
+            </p>
+        </ul>
+        <ul>
+            <div class="col-sm-1 col-md-1 col-lg-1 offset-md-1 offset-lg-1">
+                <img src="../../../assets/UTN.png" class="img-fluid">
+            </div>
+            <li>
+                <h1>Estudio 2</h1> - <h3>años</h3>
+            </li>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, cupiditate quo nobis excepturi eligendi blanditiis asperiores architecto deserunt odit, veritatis harum! Excepturi dolores, dolore pariatur perspiciatis delectus officiis. Necessitatibus, saepe?
+            </p>
+        </ul>
+        <ul>
+            <li>
+                <h1>Estudio 3</h1> - <h3>años</h3>
+            </li>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, cupiditate quo nobis excepturi eligendi blanditiis asperiores architecto deserunt odit, veritatis harum! Excepturi dolores, dolore pariatur perspiciatis delectus officiis. Necessitatibus, saepe?
+            </p>
+        </ul>
+    </div>
+</div>-->
+<div class="row">
+    <h1>Educación</h1>
+    <div *ngFor="let educ of estudios" class="contenedor">
+        <div class="col-sm-1 col-md-1 col-lg-1 offset-md-1 offset-lg-1 parte2">
+            <img src="{{educ.urlImg}}" class="img-fluid img-proyecto">
+        </div>
+        <div class="col-sm-10 col-md-10 col-lg-10 parte1">
+            <ul>
+            <li>
+                <h3>{{educ.titulo}}</h3>
+            </li>
+            <p>{{educ.descripcion}}</p>
+            </ul>
+        </div>
+    </div>
+   
+</div>

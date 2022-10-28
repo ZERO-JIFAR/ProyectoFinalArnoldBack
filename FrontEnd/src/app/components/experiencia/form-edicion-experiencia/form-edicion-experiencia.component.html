@@ -1,0 +1,26 @@
+
+<div id="formExperiencia">
+
+    <div class="fish" id="fish"></div>
+    <div class="fish" id="fish2"></div>
+    
+    <form id="waterform" method="post" (submit)="onUpdate()">
+    
+    <div class="formgroup" id="name-form">
+        <label for="name">Puesto</label>
+        <input type="text" id="puesto" name="name" value="{{experiencia.puesto}}" />
+    </div>
+    
+    <div class="formgroup" id="email-form">
+        <label for="email">Cantidad de años</label>
+        <input type="email" id="aniosExp" name="email" value="{{experiencia.cantidadAnios}}" />
+    </div>
+    
+    <div class="formgroup" id="message-form">
+        <label for="message">Descripcion</label>
+        <textarea id="descripcionExp" name="message" value="{{experiencia.descripcion}}"></textarea>
+    </div>
+    
+        <input type="submit" value="Confirmar" />
+    </form>
+    </div>

@@ -1,0 +1,27 @@
+
+
+<div id="formEducacion">
+
+<div class="fish" id="fish"></div>
+<div class="fish" id="fish2"></div>
+
+<form id="waterform" method="post" (submit)=onUpdate()>
+
+<div class="formgroup" id="name-form">
+    <label for="name">Titulo</label>
+    <input type="text" id="titulo" name="name" value="{{educacion.titulo}}" />
+</div>
+
+<div class="formgroup" id="email-form">
+    <label for="email">URL imagen</label>
+    <input type="email" id="urlImg" name="email" />
+</div>
+
+<div class="formgroup" id="message-form">
+    <label for="message">Descripcion</label>
+    <textarea id="descripcionEduc" name="message"></textarea>
+</div>
+
+	<input type="submit" value="Confirmar" />
+</form>
+</div>

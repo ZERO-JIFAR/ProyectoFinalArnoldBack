@@ -1,0 +1,22 @@
+<div class="row">
+    <h1>Educación</h1>
+    <div>
+        <button type="button" class="botones" routerLink="/educacion/crear">Crear</button>
+    </div>
+    <div *ngFor="let educ of estudios" class="contenedor">
+        <div class="col-sm-1 col-md-1 col-lg-1 offset-md-1 offset-lg-1 parte2">
+            <img src="{{educ.urlImg}}" class="img-fluid img-proyecto">
+        </div>
+        <div class="col-sm-10 col-md-10 col-lg-10 parte1">
+            <ul>
+                <li>
+                    <h3>{{educ.titulo}}</h3>
+                    <button type="button" class="botones" routerLink="/editar/educacion/{{educ.id}}">Modificar</button>
+                    <button type="button" class="botones" (click)="eliminarEducacion(educ.id)">Eliminar</button>
+                </li>
+                <p>{{educ.descripcion}}</p>
+            </ul>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,37 @@
+
+<div id="formPerfil">
+
+    <div class="fish" id="fish"></div>
+    <div class="fish" id="fish2"></div>
+    
+    <form id="waterform" method="post" (submit)="onUpdate()">
+    
+    <div class="formgroup" id="name-form">
+        <label for="name">Nombre</label>
+        <input type="text" id="nombre" name="name" value={{persona.nombre}} />
+    </div>
+
+    <div class="formgroup" id="name-form">
+        <label for="name">Apellido</label>
+        <input type="text" id="apellido" name="name" value={{persona.apellido}} />
+    </div>
+
+    <div class="formgroup" id="name-form">
+        <label for="name">Titulo</label>
+        <input type="text" id="titulo" name="name" value={{persona.titulo}} />
+    </div>
+
+    <div class="formgroup" id="name-form">
+        <label for="name">URL foto</label>
+        <input type="text" id="img" name="name" value={{persona.img}} />
+    </div>
+
+    <div class="formgroup" id="message-form">
+        <label for="message">Descripcion</label>
+        <textarea id="descripcionPersona" name="message" value={{persona.descripcion}}></textarea>
+    </div>
+    
+    
+        <input type="submit" value="Confirmar" />
+    </form>
+    </div>
